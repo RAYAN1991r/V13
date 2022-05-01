@@ -80,11 +80,11 @@ client.on('messageCreate',async (message) => {
     if (message.author.bot) return;
     if (message.channel.type == 'DM') {
       
-    let share = await client.channels.cache.get('IDCHANNEL'); //Id Channel Partner lera dane
+    let share = await client.channels.cache.get('879098307299909672'); //Id Channel Partner lera dane
     let args = await message.content.split(' ');
     let cool = await db.get(`cool_${message.author.id}`);
 
-    if(!share) return console.log('ژووری رێکلام کار ناکات');
+    if(!share) return console.log('879098307299909672');
     if (cool > Date.now()) {
         return await message.author.send({content : 'ببورە بۆ ماوەی نیو کاتژمێری تر ئەتوانی دوبارە رێکلام بکەی '}).catch(async (err) => {
             await message.channel.send({content : `${message.author} بۆ ماوەی نیو کاتژمێری تر ئەتوانی دوبارە رێکلام بکەیت`})
@@ -97,10 +97,10 @@ client.on('messageCreate',async (message) => {
         await share.send({content: `${invite}\n\` رێکلام کرا لەلایەن\` ${message.author}`});
         await message.channel.send({content : `> ** رێکلام کرا لە ژووری ${share} تۆش بیکە **
 https://discord.gg/LinkServert :white_check_mark:`}).catch(async (err) => {
-            await message.channel.send({content : `> **${message.author} لینک سێرڤەرت دانرا لە بەشی ${share}**`});
+            await message.channel.send({content : `https://discord.gg/kbup> **${message.author} لینک سێرڤەرت دانرا لە بەشی ${share}**`});
         })
     }).catch(async (err) => {
-        await message.channel.send({content: '> **:x: | ئەم لینکە هەڵەیە دوبارە بکەوە  !**'});
+        await message.channel.send({content: 'https://discord.gg/kbup> **:x: | ئەم لینکە هەڵەیە دوبارە بکەوە  !**'});
     })
    } catch (err) {
        return;
@@ -109,9 +109,9 @@ https://discord.gg/LinkServert :white_check_mark:`}).catch(async (err) => {
 //ZEROCODES//https://discord.gg/RMEQSbMtEk//ZEROCODES//
 const { joinVoiceChannel } = require('@discordjs/voice');
 
-let GUILD = client.guilds.cache.get('ID Server');
+let GUILD = client.guilds.cache.get('879098307299909672');
 const connection = joinVoiceChannel({
-    channelId: 'ID Voice',
+    channelId: '966712342677164042',
     guildId: GUILD.id,
     adapterCreator: GUILD.voiceAdapterCreator,
     selfDeaf: false
